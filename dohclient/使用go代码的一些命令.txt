@@ -1,0 +1,4 @@
+go get xxx
+go mod init 
+go mod tidy
+go run dohclient.go

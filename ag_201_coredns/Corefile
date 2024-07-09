@@ -1,0 +1,24 @@
+https://.:443 {
+    tls /root/genCert/server/server.crt.pem /dbw_proxy/coredns/pkcs8.pem
+    cache
+    hosts /root/coredns/hostfile {
+        fallthrough
+    }
+    errors
+    dnsovertor {
+        hsaddr hlpvjy4xmxgquzebw24fdfqct55arjyaxvpc5zx4qqjqzxafg6onekad.onion
+    }
+    log
+}
+.:53 {
+    cache
+    hosts /root/coredns/hostfile {
+        fallthrough
+    }
+    dnsovertor {
+        hsaddr hlpvjy4xmxgquzebw24fdfqct55arjyaxvpc5zx4qqjqzxafg6onekad.onion
+    }
+    log
+    errors
+}
+

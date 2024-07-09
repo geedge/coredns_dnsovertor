@@ -1,0 +1,8 @@
+https://.:443 {
+    tls /root/genCert/server/server.crt.pem /dbw_proxy/coredns/pkcs8.pem
+    cache
+    errors
+    log
+    forward . 223.5.5.5
+}
+
