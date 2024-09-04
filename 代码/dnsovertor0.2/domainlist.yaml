@@ -1,0 +1,9 @@
+whitelist:
+ - DOMAIN,app.biliapi.net
+ - DOMAIN-SUFFIX,qtlglb.com
+blacklist:
+ - DOMAIN,baidu.com
+ - DOMAIN-SUFFIX,qtlglb.com
+directlist:
+ - DOMAIN,qq.com
+ - DOMAIN-SUFFIX,qtlglb.com
