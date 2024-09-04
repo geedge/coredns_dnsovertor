@@ -1,0 +1,25 @@
+TestingTorNetwork 1
+DirAuthority AUTH orport=5000 v3ident=B89C83DFF33630A5B64BEB11FDEB62A3B8A48CB3 192.168.107.250:7000 EE2A65C36F3F9C1201762A260D3408E5E23F6DFE
+
+AssumeReachable 1
+TestingDirAuthVoteExit *
+TestingDirAuthVoteHSDir *
+TestingDirAuthVoteGuard *
+TestingMinExitFlagThreshold 0
+
+HiddenServiceDir /var/lib/tor/hidden_service
+HiddenServicePort 443 127.0.0.1:443
+ControlPort 9051
+Log notice file /root/hs_dns/logfile/notice.log
+DataDirectory /root/hs_dns/config/data
+RunAsDaemon 1
+PidFile /root/hs_dns/config/data/pid
+SafeLogging 0
+ExitRelay 1
+ExitPolicy accept *:*
+SocksPort 9050
+OrPort 5000
+DirPort 7000
+
+Nickname Router244
+Address 192.168.107.244

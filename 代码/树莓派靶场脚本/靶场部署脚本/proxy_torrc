@@ -1,0 +1,22 @@
+TestingTorNetwork 1
+DirAuthority AUTH orport=5000 v3ident=B89C83DFF33630A5B64BEB11FDEB62A3B8A48CB3 192.168.107.2507000 EE2A65C36F3F9C1201762A260D3408E5E23F6DFE
+
+AssumeReachable 1
+TestingDirAuthVoteExit 
+TestingDirAuthVoteHSDir 
+TestingDirAuthVoteGuard 
+TestingMinExitFlagThreshold 0
+
+RunAsDaemon 1
+DataDirectory rootdbw_proxyconfigdata
+PidFile rootdbw_proxyconfigdatapid
+Log notice file rootdbw_proxylogfilenotice.log
+SafeLogging 0
+ExitRelay 1
+ExitPolicy accept 
+SocksPort 9050
+OrPort 5000
+DirPort 7000
+
+Nickname ProxyOpenwrt
+Address 192.168.107.201
