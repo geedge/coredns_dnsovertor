@@ -1,0 +1,21 @@
+TestingTorNetwork 1
+DirAuthority AUTH orport=5000 v3ident=B89C83DFF33630A5B64BEB11FDEB62A3B8A48CB3 192.168.107.250:7000 EE2A65C36F3F9C1201762A260D3408E5E23F6DFE
+V3AuthVotingInterval 10 minutes
+TestingV3AuthInitialVotingInterval 10 minutes
+AssumeReachable 1
+TestingDirAuthVoteGuard *
+TestingMinExitFlagThreshold 0
+AuthoritativeDirectory 1
+V3AuthoritativeDirectory 1
+RunAsDaemon 1
+DataDirectory /root/config/data
+Log notice file /root/logfile/notice.log
+SafeLogging 0
+ExitRelay 1
+ExitPolicy accept *:*
+SocksPort 9050
+OrPort 5000
+DirPort 7000
+
+Nickname AUTH
+Address 192.168.107.250
